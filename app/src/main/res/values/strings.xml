@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Lanterne d20</string>
+    <string name="widget_name">PNJ &amp; d20</string>
+    <string name="widget_description">Le PNJ de ton aventure en cours, et un d20 à lancer depuis l\'écran d\'accueil.</string>
+    <string name="widget_portrait">Portrait du personnage</string>
+    <string name="widget_dice">Lancer un d20</string>
+</resources>
