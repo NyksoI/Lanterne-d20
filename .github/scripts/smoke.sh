@@ -14,4 +14,7 @@ adb logcat -d > smoke/logcat.txt
 grep -A 40 "FATAL EXCEPTION" smoke/logcat.txt > smoke/crash.txt || echo "aucun crash" > smoke/crash.txt
 echo "===== CRASH ====="; cat smoke/crash.txt
 echo "===== PID ====="; cat smoke/pid.txt
+echo "::notice title=Installation::$(tr '\n' ' ' < smoke/install.txt | tail -c 200)"
+echo "::notice title=Processus::$(cat smoke/pid.txt)"
+echo "::notice title=Crash::$(head -12 smoke/crash.txt | tr '\n' ' ' | tail -c 900)"
 exit 0
